@@ -1,0 +1,4 @@
+Method,Avg_Success_Rate,Total_Time_ms,Avg_Time_Per_Point_ms,Min_Success_Rate,Max_Success_Rate,Std_Success_Rate
+47,50.66,61701.00,61.70,0.61,98.84,23.24
+45,58.19,67932.00,67.93,0.16,98.98,27.80
+auto,75.87,89110.00,89.11,0.86,99.00,27.10

@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AdmittanceControl\AdmittanceController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SerialPort\BaseSerialPortManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Camera\CDeviceProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Camera\CGXBitmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vision\CameraCalibration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vision\CameraParamsCalibration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RobotTrajectoryPlan\CollisionChecker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vision\FeatureDetector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AdmittanceControl\ForceControlExecutor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SerialPort\ForceSerialPortManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AdmittanceControl\ForceTorqueGravityCompensator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vision\HandEyeCalibration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SerialPort\LanserSerialPortManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RobotTrajectoryPlan\PlaneAlignmentCompensator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RobotTrajectoryPlan\RobotArm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vision\TCPCalibrator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RobotTrajectoryPlan\TrajectoryOptimizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AdmittanceControl\admittancecontrollerform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RobotTrajectoryPlan\curve_processor_eigen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Camera\dahengTwoCams_qt_vs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RobotView\ddr6robotwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SerialPort\forceform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\loghandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RobotView\rrglwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RobotView\stlfileloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Zmotion\zmcaux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Zmotion\zmotioncontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="-">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AdmittanceControl\AdmittanceController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\SerialPort\BaseSerialPortManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\Camera\CDeviceProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\Camera\CGXBitmap.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\Vision\CameraCalibration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vision\CameraParamsCalibration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RobotTrajectoryPlan\CollisionChecker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vision\FeatureDetector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AdmittanceControl\ForceControlExecutor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\SerialPort\ForceSerialPortManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\SerialPort\ForceSerialPortManager">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AdmittanceControl\ForceTorqueGravityCompensator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vision\HandEyeCalibration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\SerialPort\LanserSerialPortManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\RobotTrajectoryPlan\PlaneAlignmentCompensator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RobotTrajectoryPlan\RobotArm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vision\TCPCalibrator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RobotTrajectoryPlan\TrajectoryOptimizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\AdmittanceControl\admittancecontrollerform.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\Vision\calibration_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RobotTrajectoryPlan\curve_processor_eigen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\Camera\dahengTwoCams_qt_vs.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\RobotView\ddr6robotwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\SerialPort\forceform.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\loghandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\RobotTrajectoryPlan\robot_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\RobotView\rrglwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\RobotView\stlfileloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Zmotion\zmcaux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Zmotion\zmotion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\Zmotion\zmotioncontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="副本.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\Camera\CGXBitmap.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\AdmittanceControl\admittancecontrollerform.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\Camera\dahengTwoCams_qt_vs.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\SerialPort\forceform.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="src\Camera\dahengTwoCams_qt_vs.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+</Project>

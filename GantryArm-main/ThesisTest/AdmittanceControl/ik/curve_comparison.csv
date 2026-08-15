@@ -1,0 +1,2 @@
+Algorithm,AvgTime(ms),SR150(%),SuccessRate(%),JointLimitCost,VelocitySmoothness,TotalViolations,ViolationRate(%)
+GA,22.403919,96.610169,100.000000,0.557783,35.851507,2,1.129944

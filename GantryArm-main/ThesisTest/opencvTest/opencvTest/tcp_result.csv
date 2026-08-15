@@ -1,0 +1,6 @@
+# TCP Calibration Result
+# Point Count: 4
+# RMS Error: 96.462 mm
+# Columns: theoretical_tcp_x,theoretical_tcp_y,theoretical_tcp_z,theoretical_tcp_rx,theoretical_tcp_ry,theoretical_tcp_rz,actual_tcp_x,actual_tcp_y,actual_tcp_z,actual_tcp_rx,actual_tcp_ry,actual_tcp_rz,correction_x,correction_y,correction_z,correction_rx,correction_ry,correction_rz,reference_x,reference_y,reference_z,rms_error,point_count
+theoretical_tcp_x,theoretical_tcp_y,theoretical_tcp_z,theoretical_tcp_rx,theoretical_tcp_ry,theoretical_tcp_rz,actual_tcp_x,actual_tcp_y,actual_tcp_z,actual_tcp_rx,actual_tcp_ry,actual_tcp_rz,correction_x,correction_y,correction_z,correction_rx,correction_ry,correction_rz,reference_x,reference_y,reference_z,rms_error,point_count
+0.000000,0.000000,150.000000,0.000000,0.000000,0.000000,-36.779902,-27.715270,-130.859374,0.000000,0.000000,0.000000,-36.779902,-27.715270,-280.859374,0.000000,0.000000,0.000000,500.000000,300.000000,200.000000,96.462049,4

@@ -1,0 +1,119 @@
+' ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'
+' 草图点导出到Excel中
+'
+' ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 
+Option Explicit
+ 
+Dim swApp As Object
+Dim modelDoc As Object
+Dim sketch As Object
+Dim objExcel As Object
+Dim objWorkBook As Object
+Dim objWorkSheet As Object
+'Dim objWorkBook As Excel.Workbook
+'Dim objWorkSheet As Excel.Worksheet
+ 
+Const FILE_NAME = "F:\Coordinates.xls"
+ 
+Sub main()
+ 
+    Set swApp = Application.SldWorks
+    Set modelDoc = swApp.ActiveDoc
+    
+    If modelDoc Is Nothing Then
+   
+        MsgBox "No active document!"
+        
+        Exit Sub
+ 
+    End If
+ 
+    '// get active sketch
+    '
+    Set sketch = modelDoc.SketchManager.ActiveSketch
+    
+    If sketch Is Nothing Then
+ 
+        MsgBox "No active Sketch!"
+        
+        Exit Sub
+        
+    End If
+   
+    '// Check Excel
+ 
+    Set objExcel = CreateObject("Excel.Application")
+ 
+    If objExcel Is Nothing Then
+ 
+        MsgBox "Cannot open Excel!"
+ 
+        Exit Sub
+        
+    End If
+   
+    Set objWorkBook = objExcel.Workbooks.Add
+   
+    If objWorkBook Is Nothing Then
+ 
+        MsgBox "Cannot open Excel Workbook!"
+        
+        Exit Sub
+ 
+    End If
+   
+    Set objWorkSheet = objWorkBook.Worksheets(1)
+ 
+    If objWorkSheet Is Nothing Then
+ 
+        MsgBox "Cannot open Excel WorkSheet!"
+        
+        Exit Sub
+        
+    End If
+ 
+    'Extract Sketch Points
+    '
+    Dim i As Integer
+ 
+    Dim sketchPoints As Variant
+        
+ 
+    sketchPoints = sketch.GetSketchPoints2()
+   
+ 
+    'Write X, Y, Z title to Excel worksheet
+    
+    objWorkSheet.Cells(1, 1) = "X"
+    objWorkSheet.Cells(1, 2) = "Y"
+    objWorkSheet.Cells(1, 3) = "Z"
+   
+    'Write coordinates to Excel worksheet
+    '
+    For i = 0 To UBound(sketchPoints)
+ 
+        objWorkSheet.Cells(i + 2, 1) = Round(sketchPoints(i).X * 1000, 2)
+        objWorkSheet.Cells(i + 2, 2) = Round(sketchPoints(i).Y * 1000, 2)
+        objWorkSheet.Cells(i + 2, 3) = Round(sketchPoints(i).Z * 1000, 2)
+            
+    Next i
+        
+    objWorkBook.SaveAs FILE_NAME
+  
+    'Close Excel
+    '
+    objWorkBook.Close
+   
+    objExcel.Quit
+ 
+    Set objWorkSheet = Nothing
+   
+    Set objWorkBook = Nothing
+ 
+    Set objExcel = Nothing
+ 
+    MsgBox "坐标存储于:" & vbCrLf & FILE_NAME
+     
+End Sub

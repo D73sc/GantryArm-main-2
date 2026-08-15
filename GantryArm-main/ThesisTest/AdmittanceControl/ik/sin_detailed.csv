@@ -1,0 +1,12 @@
+Algorithm,AverageTime(ms),SR150(%),OverallSuccessRate(%),AvgJointLimitCost,SuccessfulPoints,TotalPoints,TotalLimitApproaches,TotalVelocityViolations
+GA,1.667922,100.000000,100.000000,0.546243,51,51,1,0
+
+Algorithm,Joint,AvgMovement(rad),AvgVelocity,MaxVelocity,LimitApproaches,VelocityViolations
+GA,Joint1,22.669739,2.029586,7.637916,0,0
+GA,Joint2,39.089564,7.187350,9.946054,1,0
+GA,Joint3,26.453441,5.651527,9.404507,0,0
+GA,Joint4,0.059112,0.033006,0.205468,0,0
+GA,Joint5,0.010475,0.006092,0.246770,0,0
+GA,Joint6,0.026965,0.007591,0.224359,0,0
+GA,Joint7,0.017750,0.003542,0.068542,0,0
+GA,Joint8,0.013741,0.008454,0.325794,0,0

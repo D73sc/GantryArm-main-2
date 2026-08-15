@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<hand_eye_transform type_id="opencv-matrix">
+  <rows>4</rows>
+  <cols>4</cols>
+  <dt>d</dt>
+  <data>
+    8.2276549864215209e-01 -5.6837153797119500e-01
+    -3.2755256660697736e-03 3.4338153685533648e+01
+    5.6656123173555362e-01 8.2057847098640890e-01
+    -7.5228609238105273e-02 -3.8240591766818760e+01
+    4.5445626174836218e-02 6.0039718335995397e-02 9.9716093349253876e-01
+    -4.4703978355069779e+01 0. 0. 0. 1.</data></hand_eye_transform>
+<calibration_error>1.6309147197575853e+05</calibration_error>
+<is_calibrated>1</is_calibrated>
+</opencv_storage>

@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C1A56604-3CCD-3FB4-B4B4-9BA4D60A0B3E}</ProjectGuid>
+    <RootNamespace>GantryArm</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.22621.0</WindowsTargetPlatformMinVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>GantryArm</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>GantryArm</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(QtMsBuild)\qt_defaults.props" Condition="Exists('$(QtMsBuild)\qt_defaults.props')" />
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <QtInstall>5.15.2_msvc2019</QtInstall>
+    <QtModules>core;opengl;gui;widgets;serialport</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <QtInstall>5.15.2_msvc2019</QtInstall>
+    <QtModules>core;opengl;gui;widgets;serialport</QtModules>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') OR !Exists('$(QtMsBuild)\Qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GantryArm</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GantryArm</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;bin\eigen-3.4.0;bin\opencv453\include;bin\opencv453\include\opencv2;bin\inc;src\RobotTrajectoryPlan;src\Vision;src\Camera;src\RobotView;src\Zmotion;src\SerialPort;src\AdmittanceControl;release;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;UMBCS;QT_DEPRECATED_WARNINGS;UNICODE;_UNICODE;NDEBUG;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>.\lib\zmotion.lib;.\lib\opencv_world453.lib;.\lib\x86\OpenGL32.lib;.\lib\x86\GlU32.lib;-GxIAPICPPEx;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\lib;.\lib\x86;C:\opensslx86\lib;C:\Utils\my_sql\mysql-5.7.25-win32\lib;C:\Utils\postgresqlx86\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\GantryArm.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;UMBCS;QT_DEPRECATED_WARNINGS;UNICODE;_UNICODE;NDEBUG;QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>$(Configuration)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <Compression>default</Compression>
+      <InitFuncName>dahengTwoCams_qt_vs</InitFuncName>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>$(ProjectDir)</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>GeneratedFiles\$(ConfigurationName);GeneratedFiles;.;bin\eigen-3.4.0;bin\opencv453\include;bin\opencv453\include\opencv2;bin\inc;src\RobotTrajectoryPlan;src\Vision;src\Camera;src\RobotView;src\Zmotion;src\SerialPort;src\AdmittanceControl;debug;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;UMBCS;QT_DEPRECATED_WARNINGS;UNICODE;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>.\lib\zmotion.lib;.\lib\opencv_world453d.lib;.\lib\x86\OpenGL32.lib;.\lib\x86\GlU32.lib;-GxIAPICPPEx;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\lib;.\lib\x86;C:\opensslx86\lib;C:\Utils\my_sql\mysql-5.7.25-win32\lib;C:\Utils\postgresqlx86\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\GantryArm.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;UMBCS;QT_DEPRECATED_WARNINGS;UNICODE;_UNICODE;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtRcc>
+      <Compression>default</Compression>
+      <InitFuncName>dahengTwoCams_qt_vs</InitFuncName>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>./$(Configuration)/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>$(Configuration)</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>$(ProjectDir)</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\AdmittanceControl\AdmittanceController.cpp" />
+    <ClCompile Include="src\SerialPort\BaseSerialPortManager.cpp" />
+    <ClCompile Include="src\Camera\CDeviceProcess.cpp" />
+    <ClCompile Include="src\Camera\CGXBitmap.cpp" />
+    <ClCompile Include="src\Vision\CameraCalibration.cpp" />
+    <ClCompile Include="src\Vision\CameraParamsCalibration.cpp" />
+    <ClCompile Include="src\RobotTrajectoryPlan\CollisionChecker.cpp" />
+    <ClCompile Include="src\Vision\FeatureDetector.cpp" />
+    <ClCompile Include="src\AdmittanceControl\ForceControlExecutor.cpp" />
+    <ClCompile Include="src\SerialPort\ForceSerialPortManager.cpp" />
+    <ClCompile Include="src\AdmittanceControl\ForceTorqueGravityCompensator.cpp" />
+    <ClCompile Include="src\Vision\HandEyeCalibration.cpp" />
+    <ClCompile Include="src\SerialPort\LanserSerialPortManager.cpp" />
+    <ClCompile Include="src\RobotTrajectoryPlan\PlaneAlignmentCompensator.cpp" />
+    <ClCompile Include="src\RobotTrajectoryPlan\RobotArm.cpp" />
+    <ClCompile Include="src\Vision\TCPCalibrator.cpp" />
+    <ClCompile Include="src\RobotTrajectoryPlan\TrajectoryOptimizer.cpp" />
+    <ClCompile Include="src\AdmittanceControl\admittancecontrollerform.cpp" />
+    <ClCompile Include="src\RobotTrajectoryPlan\curve_processor_eigen.cpp" />
+    <ClCompile Include="src\Camera\dahengTwoCams_qt_vs.cpp" />
+    <ClCompile Include="src\RobotView\ddr6robotwidget.cpp" />
+    <ClCompile Include="src\SerialPort\forceform.cpp" />
+    <ClCompile Include="src\loghandler.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\mainwindow.cpp" />
+    <ClCompile Include="src\RobotView\rrglwidget.cpp" />
+    <ClCompile Include="src\RobotView\stlfileloader.cpp" />
+    <ClCompile Include="src\Zmotion\zmcaux.cpp" />
+    <ClCompile Include="src\Zmotion\zmotioncontrol.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="-" />
+    <ClInclude Include="src\AdmittanceControl\AdmittanceController.h" />
+    <QtMoc Include="src\SerialPort\BaseSerialPortManager.h" />
+    <ClInclude Include="src\Camera\CDeviceProcess.h" />
+    <QtMoc Include="src\Camera\CGXBitmap.h" />
+    <ClInclude Include="src\Vision\CameraCalibration.h" />
+    <ClInclude Include="src\Vision\CameraParamsCalibration.h" />
+    <ClInclude Include="src\RobotTrajectoryPlan\CollisionChecker.h" />
+    <ClInclude Include="src\Vision\FeatureDetector.h" />
+    <ClInclude Include="src\AdmittanceControl\ForceControlExecutor.h" />
+    <QtMoc Include="src\SerialPort\ForceSerialPortManager.h" />
+    <ClInclude Include="src\SerialPort\ForceSerialPortManager" />
+    <ClInclude Include="src\AdmittanceControl\ForceTorqueGravityCompensator.h" />
+    <ClInclude Include="src\Vision\HandEyeCalibration.h" />
+    <QtMoc Include="src\SerialPort\LanserSerialPortManager.h" />
+    <ClInclude Include="src\RobotTrajectoryPlan\PlaneAlignmentCompensator.h" />
+    <ClInclude Include="src\RobotTrajectoryPlan\RobotArm.h" />
+    <ClInclude Include="src\Vision\TCPCalibrator.h" />
+    <ClInclude Include="src\RobotTrajectoryPlan\TrajectoryOptimizer.h" />
+    <QtMoc Include="src\AdmittanceControl\admittancecontrollerform.h" />
+    <ClInclude Include="src\Vision\calibration_types.h" />
+    <ClInclude Include="src\RobotTrajectoryPlan\curve_processor_eigen.h" />
+    <QtMoc Include="src\Camera\dahengTwoCams_qt_vs.h" />
+    <ClInclude Include="src\RobotView\ddr6robotwidget.h" />
+    <QtMoc Include="src\SerialPort\forceform.h" />
+    <ClInclude Include="src\loghandler.h" />
+    <QtMoc Include="src\mainwindow.h" />
+    <ClInclude Include="src\RobotTrajectoryPlan\robot_types.h" />
+    <QtMoc Include="src\RobotView\rrglwidget.h" />
+    <ClInclude Include="src\RobotView\stlfileloader.h" />
+    <ClInclude Include="src\Zmotion\zmcaux.h" />
+    <ClInclude Include="src\Zmotion\zmotion.h" />
+    <QtMoc Include="src\Zmotion\zmotioncontrol.h" />
+    <ClInclude Include="副本.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -Zi -MDd -std:c++17 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;$(IntDir)\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O2 -MD -std:c++17 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;$(IntDir)\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\Camera\CGXBitmap.ui" />
+    <QtUic Include="src\AdmittanceControl\admittancecontrollerform.ui" />
+    <QtUic Include="src\Camera\dahengTwoCams_qt_vs.ui" />
+    <QtUic Include="src\SerialPort\forceform.ui" />
+    <QtUic Include="src\mainwindow.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="src\Camera\dahengTwoCams_qt_vs.qrc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(QtMsBuild)\qt.targets" Condition="Exists('$(QtMsBuild)\qt.targets')" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

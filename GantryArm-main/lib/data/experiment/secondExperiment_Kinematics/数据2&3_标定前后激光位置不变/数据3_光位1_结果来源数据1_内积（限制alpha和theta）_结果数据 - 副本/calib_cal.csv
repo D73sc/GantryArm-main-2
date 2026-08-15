@@ -1,0 +1,2 @@
+x_base [m],y_base [m],z_base [m],roll_base [rad],pitch_base [rad],yaw_base [],x_tool [m],y_tool [m],z_tool [m],scale_x_init,scale_y_init,scale_z_init,scale_1 ,scale_2 ,scale_3 ,scale_4 ,scale_5 
+0,0,0,0,0,0,0,0,0,0.999903949609123,0.997829525847768,0.999988266261005,1.00151390226066,1.00520455600088,1.00575733316794,1.01536337155388,1

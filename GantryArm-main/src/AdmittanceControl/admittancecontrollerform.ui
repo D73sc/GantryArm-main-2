@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdmittanceControllerForm</class>
+ <widget class="QWidget" name="AdmittanceControllerForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>551</width>
+    <height>877</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QGroupBox" name="groupBox_17">
+     <property name="title">
+      <string>传感器数据</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="Sensor_ZForce">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>X：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="QLineEdit" name="Sensor_ZMForce">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Mz：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="Sensor_YForce">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Z：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5">
+       <widget class="QLineEdit" name="Sensor_YMForce">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="Sensor_XForce">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QLineEdit" name="Sensor_XMForce">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Y：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Mx：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>My：</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>数据采集</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="btnClearPosiData">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>覆盖机械臂坐标数据并保存</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnSavePosiData">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>保存机械臂坐标到表格</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="btnClearSensorData">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>覆盖传感器数据并保存</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnSaveSensorData">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>保存传感器坐标到表格</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QPushButton" name="btnForceTorqueGravityCompensator">
+          <property name="text">
+           <string>重力补偿实验</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnSaveResult">
+          <property name="text">
+           <string>保存结果</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnLoadResult">
+          <property name="text">
+           <string>导入结果</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>力控参数设置</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="7" column="2">
+       <widget class="QLineEdit" name="dtEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0" colspan="7">
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QLabel" name="label_16">
+          <property name="text">
+           <string>积分限幅：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="integralMaxEdit">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnLoadParams">
+          <property name="text">
+           <string>加载参数</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnSaveParams">
+          <property name="text">
+           <string>保存参数</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnSetParams">
+          <property name="text">
+           <string>设置参数</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLineEdit" name="integralDecayEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="3">
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>积分增益分母：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>阻尼：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="5">
+       <widget class="QLineEdit" name="k_eEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3" colspan="2">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>R刚度：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="massTransEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="dampingTransEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3" colspan="2">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>R质量：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="5">
+       <widget class="QLineEdit" name="etaEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="5">
+       <widget class="QLineEdit" name="stiffnessRotEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="stiffnessTransEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_18">
+        <property name="text">
+         <string>积分衰减：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3" colspan="2">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>R阻尼：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>刚度：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>积分增益分子：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="QLineEdit" name="dampingRotEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>质量：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" colspan="2">
+       <widget class="QLabel" name="label_17">
+        <property name="text">
+         <string>采样周期：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QLineEdit" name="massRotEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>力控</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_22">
+          <property name="text">
+           <string>数据地址：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="LineEditDataAddress">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>1</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnOpenData">
+          <property name="text">
+           <string>打开数据</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_32">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Y</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="lblCurrentPosiY">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_23">
+          <property name="text">
+           <string>当前数据</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QSpinBox" name="spbCurrentPosi">
+          <property name="maximum">
+           <number>10000</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_31">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>X</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLabel" name="label_33">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Z</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="lblCurrentPosiX">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLabel" name="lblCurrentPosiZ">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QPushButton" name="btnLoadData">
+          <property name="text">
+           <string>从csv导入轨迹数据</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnLoadmmData">
+          <property name="text">
+           <string>从csv导入mm轨迹数据</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QPushButton" name="btnClearData">
+          <property name="text">
+           <string>清除数据</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnLoadMainWindowData">
+          <property name="text">
+           <string>导入主页面数据</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QPushButton" name="btnCurrentPosition">
+          <property name="text">
+           <string>运动到当前数据位置</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnAdmittanceControllerOnce">
+          <property name="text">
+           <string>单次力控</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnMoveTrajectoryOnce">
+          <property name="text">
+           <string>单次运动</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QPushButton" name="btnStartForceExecute">
+          <property name="text">
+           <string>开始力控</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnStopForceExecute">
+          <property name="text">
+           <string>结束力控</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

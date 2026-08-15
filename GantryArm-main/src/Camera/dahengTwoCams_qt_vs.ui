@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dahengTwoCams_qt_vsClass</class>
+ <widget class="QMainWindow" name="dahengTwoCams_qt_vsClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>394</width>
+    <height>586</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>dahengTwoCams_qt_vs</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>3ds</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>设备列表</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="spacing">
+            <number>15</number>
+           </property>
+           <item>
+            <widget class="QComboBox" name="cB_DeviceList">
+             <property name="font">
+              <font>
+               <family>3ds</family>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pB_refreshDeviceList">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>刷新列表</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>3ds</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>设备控制</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout">
+           <property name="horizontalSpacing">
+            <number>50</number>
+           </property>
+           <property name="verticalSpacing">
+            <number>20</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pB_OpenDevice">
+             <property name="text">
+              <string>打开设备</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="pB_CloseDevice">
+             <property name="text">
+              <string>关闭设备</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="pB_StartCapture">
+             <property name="text">
+              <string>开始采集</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="pB_StopCapture">
+             <property name="text">
+              <string>停止采集</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>3ds</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>参数基本设置</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="0">
+              <widget class="QLabel" name="lB_Static_ShutterTime">
+               <property name="text">
+                <string>曝光时间                                         </string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lE_Shutter"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="lB_Static_Gain">
+               <property name="text">
+                <string>增益</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lE_Gain"/>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="lB_Static_CaptureSpeed">
+               <property name="text">
+                <string>采集速度级别</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="lE_CaptureSpeed"/>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="lB_Static_BalanceWhiteAuto">
+               <property name="text">
+                <string>自动白平衡</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QComboBox" name="cB_BalanceWhiteAuto"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="ckB_ShowDeviceSN">
+             <property name="text">
+              <string>显示相机型号</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>1</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>3ds</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>图像保存</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="font">
+              <font>
+               <family>3ds</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>文件路径：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lE_ImageFilePath">
+             <property name="font">
+              <font>
+               <family>3ds</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_openFilePath">
+             <property name="font">
+              <font>
+               <family>3ds</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>打开</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="font">
+              <font>
+               <family>3ds</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>文件名：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lE_ImageName">
+             <property name="font">
+              <font>
+               <family>3ds</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>.bmp</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pB_SaveImage">
+             <property name="font">
+              <font>
+               <family>3ds</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>保存</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="CGXBitmap" name="bitMap_LCam" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>1</horstretch>
+        <verstretch>5</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="CGXBitmap" name="bitMap_RCam" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>1</horstretch>
+        <verstretch>5</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CGXBitmap</class>
+   <extends>QWidget</extends>
+   <header>cgxbitmap.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

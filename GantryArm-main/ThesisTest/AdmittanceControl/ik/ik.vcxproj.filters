@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Gantry">
+      <UniqueIdentifier>{fb2572ab-3ca1-4c01-a690-7b04e7cf1556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Gantry">
+      <UniqueIdentifier>{035bf261-36a4-4bb1-937d-b67d1b79b7b2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AlgorithmComparator.cpp">
+      <Filter>源文件\Gantry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\RobotTrajectoryPlan\CollisionChecker.cpp">
+      <Filter>源文件\Gantry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\RobotTrajectoryPlan\RobotArm.cpp">
+      <Filter>源文件\Gantry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\RobotTrajectoryPlan\TrajectoryOptimizer.cpp">
+      <Filter>源文件\Gantry</Filter>
+    </ClCompile>
+    <ClCompile Include="admittance_controller.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="testAdmittance.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="testForceTorqueGravityCompensator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="testRawForce.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="testAC.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\AdmittanceControl\ForceTorqueGravityCompensator.cpp">
+      <Filter>源文件\Gantry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\AdmittanceControl\AdmittanceController.cpp">
+      <Filter>源文件\Gantry</Filter>
+    </ClCompile>
+    <ClCompile Include="testFCE.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\AdmittanceControl\ForceControlExecutor.cpp">
+      <Filter>源文件\Gantry</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlgorithmComparator.h">
+      <Filter>头文件\Gantry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\RobotTrajectoryPlan\CollisionChecker.h">
+      <Filter>头文件\Gantry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\RobotTrajectoryPlan\robot_types.h">
+      <Filter>头文件\Gantry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\RobotTrajectoryPlan\RobotArm.h">
+      <Filter>头文件\Gantry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\RobotTrajectoryPlan\TrajectoryOptimizer.h">
+      <Filter>头文件\Gantry</Filter>
+    </ClInclude>
+    <ClInclude Include="admittance_controller.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="admittance_factory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\AdmittanceControl\AdmittanceController.h">
+      <Filter>头文件\Gantry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\AdmittanceControl\ForceTorqueGravityCompensator.h">
+      <Filter>头文件\Gantry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\AdmittanceControl\ForceControlExecutor.h">
+      <Filter>头文件\Gantry</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ForceForm</class>
+ <widget class="QWidget" name="ForceForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>509</width>
+    <height>747</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QGroupBox" name="groupBox_16">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_21">
+        <item>
+         <widget class="QLabel" name="label_73">
+          <property name="text">
+           <string>COM PORT：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBoxPortName_Force">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>200</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_74">
+          <property name="text">
+           <string>BaudRate：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBoxBaudRate_Force"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QPushButton" name="btnRefreshPortsbtn_Force">
+          <property name="text">
+           <string>RefeshCOM</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnOpenCOM_Force">
+          <property name="text">
+           <string>OpenCOM</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnOnceSendData_Force">
+          <property name="text">
+           <string>CollectDataOnce</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="btnInitSensor">
+          <property name="text">
+           <string>InitSensor</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditHZ"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnSetHz">
+          <property name="text">
+           <string>SetCollectHZ</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnStartAutoSendData_Force">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>120</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>StartContinuous</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="btnSaveData">
+          <property name="text">
+           <string>StartSaveData</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnExportData">
+          <property name="text">
+           <string>ExportData</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_14">
+        <item>
+         <widget class="QLabel" name="label_75">
+          <property name="text">
+           <string>ReceiveData：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="txtReceiveData_Force"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_17">
+        <property name="title">
+         <string>SensorData</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="Sensor_ZForce">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>X：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="5">
+          <widget class="QLineEdit" name="Sensor_ZMForce">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Mz：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="Sensor_YForce">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Z：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="5">
+          <widget class="QLineEdit" name="Sensor_YMForce">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="Sensor_XForce">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="QLineEdit" name="Sensor_XMForce">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Y：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>Mx：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>My：</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_26">
+        <item>
+         <widget class="QLineEdit" name="txtSend_Force"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnSendData_Force">
+          <property name="text">
+           <string>Send</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
