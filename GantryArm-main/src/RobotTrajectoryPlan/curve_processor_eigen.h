@@ -36,7 +36,7 @@ public:
     std::vector<Eigen::Matrix4d> generateIKTrajectory();
     std::vector<Eigen::Matrix4d> generateOrientInpIKTrajectory(std::string file=" ");
 
-    vector<pair<int, int>> pairs = { {7,8} ,{1,2},{3,4} };
+    vector<pair<int, int>> pairs = { {7,8} ,{1,2},{3,4},{5, 6} };
     std::vector<std::pair<int, int>> side_pairs = { {9,10},{11,12} };
 
     // vector<pair<int, int>> pairs = {{1,2}};

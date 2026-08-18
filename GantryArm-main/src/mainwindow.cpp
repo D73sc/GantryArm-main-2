@@ -2529,6 +2529,38 @@ void MainWindow::on_btnGetShuaTraj_clicked()
 
 void MainWindow::on_btnGetTieTraj_clicked()
 {
-    trajectory=processor->generateOrientInpIKTrajectory();
+    //trajectory=processor->generateOrientInpIKTrajectory();
+
+    if (processor == nullptr)
+    {
+        UpdateUI("请先选择文件并点击“处理SW曲线”");
+        return;
+    }
+
+    const QString desktopPath =
+        QStandardPaths::writableLocation(QStandardPaths::DesktopLocation);
+
+    const QString fileName =
+        QDateTime::currentDateTime().toString("yyyy-MM-dd-hh-mm-ss-")
+        + "tie_pose_trajectory.csv";
+
+    const QString outputPath =
+        QDir(desktopPath).filePath(fileName);
+
+    trajectory = processor->generateOrientInpIKTrajectory(
+        outputPath.toStdString()
+        );
+
+    if (trajectory.empty())
+    {
+        UpdateUI("贴胶位姿轨迹生成失败：没有得到轨迹点");
+        return;
+    }
+
+    UpdateUI(
+        QString("贴胶位姿CSV生成成功：%1个点，保存位置：%2")
+            .arg(trajectory.size())
+            .arg(outputPath)
+        );
 }
 
